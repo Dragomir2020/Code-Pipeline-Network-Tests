@@ -1,0 +1,28 @@
+{
+  "name": "converter-mocha-node-express",
+  "version": "1.0.0",
+  "description": "converter uses mocha node express and chai",
+  "main": "request.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "converter-mocha-node-express"
+  },
+  "keywords": [
+    "node",
+    "mocha",
+    "js",
+    "javascript",
+    "chai",
+    "TDD"
+  ],
+  "author": "Dillon Dragomir",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "request": "^2.81.0"
+  }
+}

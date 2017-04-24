@@ -1,0 +1,20 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo Nothing to install
+  pre_build:
+    commands:
+      - echo Installing Express and ElasticSearch Dependancies...
+      - npm install chai
+      - npm install request
+      - npm install mocha
+      
+  build:
+    commands:
+      - echo Build started on `date`
+  post_build:
+    commands:
+     - echo Test Code
+     - npm test

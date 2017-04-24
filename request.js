@@ -1,0 +1,29 @@
+
+//////////////////////////////////////////////////////////////////////////////
+//MOCHA UNIT TESTING
+//////////////////////////////////////////////////////////////////////////////
+
+/////////////////
+//CONTRIBUTIONS//
+/////////////////
+
+////DATE///////////NAME/////////////////DESCRIPTION////////////////////////////
+//  04/20/2017     Dillon Dragomir      Initialize file 
+
+////////////////
+//DEPENDANCIES//
+////////////////
+var expect = require("chai").expect;
+var request = require("request");
+
+////////
+//CODE//
+////////
+var url = "http://localhost:8081/rgbToHex?red=255&green=255&blue=255";
+request(url, function(error, response, body) {
+			if(error){
+				console.log("Error");
+			} else {
+				console.log(response.statusCode);
+			}
+		});
